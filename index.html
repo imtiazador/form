@@ -10,18 +10,20 @@
       <table style="border: 1px solid black; margin: auto; width: 80%">
         <tr>
           <td style="padding: 10px; width: 30%">
-            <img src="bau.jpg" alt="Example Image" />
+            <img src="bau.jpg" alt="Example Image" width="200" height="200"/>
           </td>
-          <td style="padding: 10px; width: 70%">
-            <h3>বাংলাদেশ কৃষি বিশ্ববিদ্যালয়, ময়মনসিংহ<br /></h3>
-            <h4>এম.এস. পরীক্ষার পারিতোষিক বিল</h4>
+          <td style="padding: 10px; width: 70%;">
+            <div style="padding-left: 20%; font-size: 20px;">
+              <h3>বাংলাদেশ কৃষি বিশ্ববিদ্যালয়, ময়মনসিংহ<br /></h3>
+              <h4>এম.এস. পরীক্ষার পারিতোষিক বিল</h4>
+            </div>
           </td>
         </tr>
       </table>
       <table style="border: 1px solid black; margin: auto; width: 80%">
         <tr>
           <td style="padding: 10px; width: 50%; border-right: 1px solid black">
-            <h5 style="display: inline-block">বিল বইয়ের ক্রমিক নম্বর</h5>
+            <h5 style="display: inline-block; padding-left: 8%;">বিল বইয়ের ক্রমিক নম্বর</h5>
             <input
               type="text"
               name="bill_number"
@@ -29,24 +31,24 @@
             />
           </td>
           <td style="padding: 10px; text-align: right; width: 50%">
-            <div style="text-align: left; padding-left: 20%">
-              <h5 style="display: inline-block">পরীক্ষা</h5>
+            <div style="text-align: left; width: 100%;">
+              <h5 style="display: inline-block;width: 20%;">পরীক্ষা</h5>
               <input
                 type="text"
                 name="exam"
-                style="margin-bottom: 5px; width: 50%"
+                style="margin-bottom: 5px; width: 70%"
               /><br />
-              <h5 style="display: inline-block">ভাউচার নম্বর</h5>
+              <h5 style="display: inline-block;width: 20%;">ভাউচার নম্বর</h5>
               <input
                 type="text"
                 name="voucher_number"
-                style="margin-bottom: 5px; width: 50%"
+                style="margin-bottom: 5px; width: 70%"
               /><br />
-              <h5 style="display: inline-block">পৃষ্ঠা</h5>
+              <h5 style="display: inline-block;width: 20%;">পৃষ্ঠা</h5>
               <input
                 type="text"
                 name="page"
-                style="margin-bottom: 5px; width: 50%"
+                style="margin-bottom: 5px; width: 70%"
               /><br />
               <h5 style="display: inline-block">(হিসাব শাখা)</h5>
             </div>
@@ -55,40 +57,51 @@
       </table>
       <table style="border: 1px solid black; margin: auto; width: 80%">
         <tr>
-          <td style="padding: 1%; width: 50%">
-            <h5 style="display: inline-block">
+          <td style="padding-left: 5%; width: 50%">
+            <p style="display: inline-block">
               পরীক্ষকের নাম: ড. মোঃ আব্দুল আওয়াল
               <br />
               <br />
               িকানা : কৃষি শক্তি ও যন্ত্র বিভাগ, বাকৃবি, ময়মনসিংহ।
-            </h5>
+            </p>
           </td>
           <td style="text-align: right; width: 50%">
-            <div style="text-align: right; padding-right: 20%">
-              <h5 style="display: inline-block">পদবীঃ প্রফেসর</h5>
+            <div style="text-align: center;">
+              <p style="display: inline-block">পদবীঃ প্রফেসর</p>
             </div>
           </td>
         </tr>
       </table>
       <table style="border: 1px solid black; margin: auto; width: 80%">
         <tr>
-          <td colspan="2" style="width: 50%; margin: 0%;">
+          <td style="width: 50%; margin: 0%;padding-left: 5%;">
             <p>
-              পরীক্ষার নাম: এম এস, ইন ফার্মপাওয়ার এন্ড মেশিনারী       
-              <span style="margin-left: 15%;">বিভাগঃ কৃষি শক্তি ও যন্ত্র বিভাগ</span>
+              পরীক্ষার নাম: এম এস, ইন ফার্মপাওয়ার এন্ড মেশিনারী
               <br />
               <br />
               সেমিষ্টার :<input  type="text"
               name="Semester" style="margin-left: 1%"/> 
-              <span  style="margin-left: 29%;"> কোর্স ক্রেডিট :</span> 
+              <br />
+              <br />
+              কোর্স নং :
+              <input type="text"
+              name="course_No" style="width: 10%;margin-left: 1%"/>
+              <span style="margin-left: 10%;">
+                কোর্স টাইটেল :
+              <input type="text"
+              name="course_title" style="width: 10%;margin-left: 1%"/>
+              </p>
+            </div>
+          </td>
+          <td style="width: 50%; text-align: left;padding-left: 10%;">
+            <p>   
+              বিভাগঃ কৃষি শক্তি ও যন্ত্র বিভাগ
+              <br />
+              <br />কোর্স ক্রেডিট :
               <input  type="text"
               name="course_credit" style="width: 10%;margin-left: 1%"/>
               <br />
-              <br />
-              কোর্স নং ও টাইটেল :
-              <input type="text"
-              name="course_credit" style="width: 10%;margin-left: 1%"/>
-              <span style="margin-left: 25%;">কোর্সের সাথে জড়িত শিক্ষক সংখ্যাঃ</span>
+              <br />কোর্সের সাথে জড়িত শিক্ষক সংখ্যাঃ
               <input type="text"
               name="course_credit" style="width: 10%;margin-left: 1%"/>
               </p>
@@ -97,7 +110,7 @@
         </tr>
         <tr>
           <td colspan="2" style="border-top: 1px solid black">
-            <h4>পরীক্ষা সংক্রান্ত কাজের বিবরণ</h4>
+            <h4 style="padding-left: 5%;">পরীক্ষা সংক্রান্ত কাজের বিবরণ</h4>
           </td>
         </tr>
       </table>
@@ -125,13 +138,14 @@
                     <span style="display: inline-block; text-align: right; width: 40%;">
                         ....................
                     </span>
-                     
+                    
                 </li>
                   <ul style="list-style-type: none;">
                     <li>
                       <span style="display: inline-block; width: 45%;">i) প্রথম ক্লাস রুম টেষ্ট
-                      <input type="text" name="first_class_room_test1" id="first_class_room_test1" style="width: 10%;margin-left: 7%">
-                      <input type="text" name="first_class_room_test1" id="first_class_room_test1" style="width: 10%;margin-left: 7%">
+                          <input type="text" name="first_class_room_test1" id="first_class_room_test1" style="width: 10%;margin-left: 37%">
+                          <input type="text" name="first_class_room_test1" id="first_class_room_test1" style="width: 10%;margin-left: 7%">
+                        
                     </span>
                       <span style="display: inline-block; text-align: right; width: 40%;">
                         ....................
@@ -140,7 +154,7 @@
                     <li>
                       <span style="display: inline-block; width: 45%;">
                         ii) দ্বিতীয় ক্লাস রুম টেষ্ট
-                        <input type="text" name="second_class_room_test1" id="second_class_room_test1" style="width: 10%;margin-left: 7%">
+                        <input type="text" name="second_class_room_test1" id="second_class_room_test1" style="width: 10%;margin-left: 35%">
                         <input type="text" name="second_class_room_test2" id="second_class_room_test2" style="width: 10%;margin-left: 7%">
                         
                     </span>
@@ -152,8 +166,8 @@
                   <li>
                     <span style="display: inline-block; width: 45%;">
                     খ) সেমিষ্টার ফাইনাল পরীক্ষা
-                    <input type="text" name="semester_final_exam" id="semester_final_exam" style="width: 10%;margin-left: 7%">
-                    <input type="text" name="semester_final_exam" id="semester_final_exam" style="width: 10%;margin-left: 7%">
+                    <input type="text" name="semester_final_exam" id="semester_final_exam" style="width: 10%;margin-left: 36.5%">
+                    <input type="text" name="semester_final_exam" id="semester_final_exam" style="width: 10%;margin-left: 6%">
                     </span>
                     <span style="display: inline-block; text-align: right; width: 40%;">
                       ....................
@@ -162,9 +176,9 @@
                 </ul>
               </li>
               <li>
-                <span style="display: inline-block; width: 45%;">
+                <span style="display: inline-block; width: 50%;">
                 ২। সেমিষ্টার ফাইনাল পরীক্ষার পরিদর্শকের সম্মানী
-                <input type="text" name="semester_final_exam_inspector_fee1" id="semester_final_exam_inspector_fee1" style="width: 10%;margin-left: 3%">
+                <input type="text" name="semester_final_exam_inspector_fee1" id="semester_final_exam_inspector_fee1" style="width: 10%;margin-left: 19%">
                 <input type="text" name="semester_final_exam_inspector_fee2" id="semester_final_exam_inspector_fee2" style="width: 10%;margin-left: 3%">
                 </span>
                 <span style="display: inline-block; text-align: right; width: 40%;">
@@ -186,7 +200,7 @@
                     <li>
                       <span style="display: inline-block; width: 45%;">
                       i) প্রথম ক্লাস রুম টেষ্ট
-                      <input type="text" name="first_class_room_test1" id="first_class_room_test1" style="width: 10%;margin-left: 7%">
+                      <input type="text" name="first_class_room_test1" id="first_class_room_test1" style="width: 10%;margin-left: 37%">
                       <input type="text" name="first_class_room_test1" id="first_class_room_test1" style="width: 10%;margin-left: 7%">
                       </span>
                       <span style="display: inline-block; text-align: right; width: 40%;">
@@ -196,7 +210,7 @@
                     <li>
                       <span style="display: inline-block; width: 45%;">
                       ii) দ্বিতীয় ক্লাস রুম টেষ্ট
-                      <input type="text" name="second_class_room_test1" id="second_class_room_test1" style="width: 10%;margin-left: 7%">
+                      <input type="text" name="second_class_room_test1" id="second_class_room_test1" style="width: 10%;margin-left: 35%">
                       <input type="text" name="second_class_room_test2" id="second_class_room_test2" style="width: 10%;margin-left: 7%">
                       </span>
                       <span style="display: inline-block; text-align: right; width: 40%;">
@@ -207,7 +221,7 @@
                   <li>
                     <span style="display: inline-block; width: 45%;">
                     খ) সেমিষ্টার ফাইনাল পরীক্ষা
-                    <input type="text" name="semester_final_exam" id="semester_final_exam" style="width: 10%;margin-left: 7%">
+                    <input type="text" name="semester_final_exam" id="semester_final_exam" style="width: 10%;margin-left: 35%">
                     <input type="text" name="semester_final_exam" id="semester_final_exam" style="width: 10%;margin-left: 7%">
                     </span>
                     <span style="display: inline-block; text-align: right; width: 40%;">
@@ -217,9 +231,9 @@
                 </ul>
               </li>
               <li>
-                <span style="display: inline-block; width: 45%;">
+                <span style="display: inline-block; width: 50%;">
                 ৪। রিপোর্ট, হোম ওয়ার্ক অথবা অন্যান্য এসাইনমেন্ট
-                <input type="text" name="report_homework_assgn" id="report_homework_assgn" style="width: 10%;margin-left: 3%">
+                <input type="text" name="report_homework_assgn" id="report_homework_assgn" style="width: 10%;margin-left: 19%">
                 <input type="text" name="report_homework_assgn" id="report_homework_assgn" style="width: 10%;margin-left: 3%">
                 </span>
                 <span style="display: inline-block; text-align: right; width: 40%;">
@@ -227,9 +241,9 @@
               </span>
               </li>
               <li>
-                <span style="display: inline-block; width: 45%;">
+                <span style="display: inline-block; width: 50%;">
                 ৫। সেমিষ্টার পরীক্ষার ফলাফল প্রস্তুতি
-                <input type="text" name="semester_exam_result_making" id="semester_exam_result_making" style="width: 10%;margin-left: 3%">
+                <input type="text" name="semester_exam_result_making" id="semester_exam_result_making" style="width: 10%;margin-left: 35%">
                 <input type="text" name="semester_exam_result_making" id="semester_exam_result_making" style="width: 10%;margin-left: 3%">
                 </span>
                 <span style="display: inline-block; text-align: right; width: 40%;">
@@ -338,7 +352,7 @@
               <li>
                 <span style="display: inline-block; width: 45%;">
                 ৮। ফলাফল প্রস্তুতি ও চূড়ান্তকরণ
-                <input type="text" name="result_making_finalization_roll" id="result_making_finalization_roll" style="width: 10%;margin-left: 3%">
+                <input type="text" name="result_making_finalization_roll" id="result_making_finalization_roll" style="width: 10%;margin-left: 35%">
                 <input type="text" name="result_making_finalization_reg" id="result_making_finalization_reg" style="width: 10%;margin-left: 3%">
                 </span>
                 <span style="display: inline-block; text-align: right; width: 40%;">
@@ -348,7 +362,7 @@
               <li>
                 <span style="display: inline-block; width: 45%;">
                 ৯। থিসিস ডিফেন্স
-                <input type="text" name="thesis_marking_roll" id="thesis_marking_roll" style="width: 10%;margin-left: 3%">
+                <input type="text" name="thesis_marking_roll" id="thesis_marking_roll" style="width: 10%;margin-left: 50%">
                 <input type="text" name="thesis_marking_reg" id="thesis_marking_reg" style="width: 10%;margin-left: 3%">
                 </span>
                 <span style="display: inline-block; text-align: right; width: 40%;">
@@ -358,7 +372,7 @@
               <li>
                 <span style="display: inline-block; width: 45%;">
                 ১০। চেয়ারম্যান, থিসিস ডিফেন্স কমিটি,
-                <input type="text" name="chairman_thesis_defence_team_roll" id="chairman_thesis_defence_team_roll" style="width: 10%;margin-left: 3%">
+                <input type="text" name="chairman_thesis_defence_team_roll" id="chairman_thesis_defence_team_roll" style="width: 10%;margin-left: 30%">
                 <input type="text" name="chairman_thesis_defence_team_reg" id="chairman_thesis_defence_team_reg" style="width: 10%;margin-left: 3%">
                 </span>
                 <span style="display: inline-block; text-align: right; width: 40%;">
@@ -387,6 +401,25 @@
           </td>
           <td style=" width:45%; padding-top: 5%;text-align: center;"> 
             পরীক্ষকের স্বাক্ষর ও তারিখ
+          </td>
+        </tr>
+        <tr style="height: 20px;"></tr>
+          <td colspan="3" style="padding-left: 25%;padding-top: 5%;">
+            ........................টাকা (কথায়, ......................................................মাত্র) প্রদান করার জন্য পাশ করা হল।
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top: 5%;text-align: center;">
+            <hr style="width: 30%;">
+            হিসাব রক্ষক
+          </td>
+          <td style="text-align: center; padding-top: 5%; ">
+            <hr style="width: 70%;">
+            এস.ও (হিসাব)
+          </td>
+          <td style="padding-top: 5%;text-align: center;"> 
+            <hr style="width: 50%;">
+            একাউন্টস অফিসার (পরীক্ষা শাখা)
           </td>
         </tr>
       </table>
